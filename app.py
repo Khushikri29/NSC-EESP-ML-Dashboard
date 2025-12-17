@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sqlalchemy import create_engine
 import joblib
 
 # --------------------------------------------------
@@ -18,8 +17,8 @@ st.title("⚡ NSC – EESP Analysis & Prediction Dashboard")
 # --------------------------------------------------
 @st.cache_data
 def load_data():
-    engine = create_engine("sqlite:///nsc_eesp.db")
-    return pd.read_sql("SELECT * FROM nsc_requests", engine)
+    return pd.read_csv("nsc_data.csv")
+
 
 df = load_data()
 
@@ -125,3 +124,4 @@ if st.button("🚀 Predict Future Demand"):
 # --------------------------------------------------
 st.markdown("---")
 st.caption("Final Year Project | NSC – EESP | Streamlit • ML • SQLite")
+
