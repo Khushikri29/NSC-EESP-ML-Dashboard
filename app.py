@@ -17,7 +17,12 @@ st.title("⚡ NSC – EESP Analysis & Prediction Dashboard")
 # --------------------------------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("nsc_data.csv")
+    return pd.read_csv(
+        "nsc_data.csv",
+        encoding="latin-1",
+        low_memory=False
+    )
+
 
 
 df = load_data()
@@ -124,4 +129,5 @@ if st.button("🚀 Predict Future Demand"):
 # --------------------------------------------------
 st.markdown("---")
 st.caption("Final Year Project | NSC – EESP | Streamlit • ML • SQLite")
+
 
