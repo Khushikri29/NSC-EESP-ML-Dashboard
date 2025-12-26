@@ -1,0 +1,29 @@
+# Ignore system / user files
+AppData/
+Documents/
+Pictures/
+Videos/
+Downloads/
+NTUSER*
+*.lnk
+*.pdf
+*.docx
+*.pptx
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+desktop.ini
+
+# Other projects
+reactquery_yt/
+JS tutorial/
+JSX/
+
+# Large / private
+Saved Games/
+Searches/
+Music/
+*.db
