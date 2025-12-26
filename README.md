@@ -19,3 +19,4 @@ This project analyzes NSC EESP consumer data using a database-driven dashboard a
 - Consumer category insights
 - Phase-wise demand analysis
 - Future load prediction using ML
+<!-- redeploy trigger -->
