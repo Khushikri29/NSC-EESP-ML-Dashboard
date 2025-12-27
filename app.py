@@ -124,11 +124,8 @@ if st.button(" Predict Future Demand"):
     **Month Considered:** {month}  
     """)
 
-# --------------------------------------------------
-# Footer
-# --------------------------------------------------
-st.markdown("---")
-st.caption("Final Year Project | NSC – EESP | Streamlit • ML • SQLite")
+
+
 
 
 
